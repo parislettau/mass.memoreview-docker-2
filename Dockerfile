@@ -15,8 +15,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install --no-install-recommends -y \
     apache2 \
     apache2-utils \
-    git \
     ca-certificates \
+    git \
     php \
     libapache2-mod-php \
     php-curl \
@@ -28,10 +28,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     php-xml \
     php-zip && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
-# apt-get install nano
-
-# Install nano
-# RUN apt-get install nano
 
 # Copy virtual host configuration from current path onto existing 000-default.conf
 COPY default.conf /etc/apache2/sites-available/000-default.conf
