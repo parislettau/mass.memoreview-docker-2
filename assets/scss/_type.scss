@@ -1,0 +1,128 @@
+// Fonts
+@font-face {
+  font-family: Gothic-No-13-Regular;
+  src: url("fonts/Gothic-No-13-Regular.otf") format("opentype");
+}
+
+// Fonts
+@font-face {
+  font-family: Lido-Regular;
+  src: url("fonts/LidoSTF.otf") format("opentype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lido-Regular;
+  src: url("fonts/LidoSTF-Italic.woff") format("woff");
+  font-style: italic;
+  // font-display: swap;
+}
+
+@font-face {
+  font-family: Union-Regular;
+  src: url("fonts/Union-Regular.otf") format("opentype");
+}
+
+
+@import url("https://use.typekit.net/udz2lhp.css");
+
+
+body {
+  color: var(--home);
+  font-weight: 400;
+}
+
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+
+p {
+  font-size: var(--body);
+  font-family: var(--font-body);
+  font-weight: 400;
+//  font-family: Lido STF;
+//  font-size: 16px;
+  font-style: normal;
+//  font-weight: 400;
+//  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  //  font-size: 26px;
+}
+
+// Block quotes
+blockquote {
+  p {
+    //    margin: 0;
+    //    padding: 0 2rem;
+    font-size: var(--body);
+  }
+}
+
+//
+// Headings
+//
+
+.text {
+  &--xxxl {
+    font-size: var(--ultra)
+  }
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--font-header), sans-serif;
+  font-weight: 400;
+  //  line-height: 0.9;
+}
+
+h1,
+.h1 {
+  font-size: var(--max);
+}
+
+h2,
+.h2 {
+  font-size: var(--large);
+  font-family: var(--font-header);
+  //  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.93;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3,
+.h3 {
+  font-size: var(--body);
+  font-size: 1rem
+}
+
+h4,
+.h4 {
+  font-size: 1rem
+}
+
+h5,
+.h5 {
+  font-size: 1rem
+}
+
+h6,
+.h6 {
+  font-size: 1rem
+}
+
+.nav {}

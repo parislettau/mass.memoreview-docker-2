@@ -1,0 +1,37 @@
+{
+  "name": "kirby-matomo",
+  "version": "0.0.1",
+  "description": "Matomo helpers and panel sections for Kirby",
+  "main": "index.js",
+  "author": "Sylvain Julé",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch src/index.js --no-source-maps -d ./",
+    "parcel-build": "parcel build src/index.js --no-source-maps --experimental-scope-hoisting --no-minify -d ./",
+    "custom-minify": "minify index.js -d ./",
+    "build": "npm run parcel-build && npm run custom-minify",
+    "svg": "vsvg -s ./src/assets/svg/export -t ./src/assets/svg/compiled"
+  },
+  "posthtml": {
+    "recognizeSelfClosing": true
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.0.0",
+    "babel-minify": "^0.5.1",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-preset-env": "^1.7.0",
+    "chart.js": "^2.7.2",
+    "cssnano": "^4.1.10",
+    "dayjs": "^1.7.7",
+    "sass": "^1.21.0",
+    "vue-chartjs": "^3.4.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "alias": {
+    "chart.js": "chart.js/dist/Chart.min.js"
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
+  }
+}

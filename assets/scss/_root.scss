@@ -1,0 +1,65 @@
+:root {
+  scroll-behavior: smooth;
+  font-size: 1.75vw;
+  --font-body: Lido-Regular, serif;
+  // --font-body:  bely, serif;
+
+  --font-header: Gothic-No-13-Regular, sans-serif;
+  // --font-header: minerva-modern, sans-serif;
+
+  --font-caption: Lido-Regular, serif;
+  //  --font-buttons: Union-Regular, sans-serif;
+  --union: Union-Regular, sans-serif;
+
+  //FONT SIZES - Golden Ratios
+  --ultra: 7rem;
+  --max: 5.5rem;
+  --large: 3.5rem;
+  --medium: 2rem;
+  --mid: 1.5rem;
+  --body: 1.1rem;
+  --small: 20px;
+  --smaller: 0.5rem;
+  --tiny: 0.3rem;
+  --caption: 14px;
+
+  //LINE HEIGHTS
+  --single: 1;
+  --double: 2;
+
+  //HIGHLIGHT COLOUR
+  --highlight: ;
+
+  // COLOUR
+  --home: #3f3620;
+  // --home: #3d100d;
+  --yellow: #fefbb3;
+
+  //TRANSITION SPEED
+  --fast: 0.25s;
+  --normal: 0.5s;
+  --slow: 1s;
+
+  //TRANSITION EFFECT
+  --ease: cubic-bezier(0.65, 0.05, 0.36, 1);
+
+  //MARGINS
+  --narrow: 0;
+  --default: 0.25rem;
+  --wide: 0.5rem;
+  --wider: 0.75rem;
+  --widest: 1rem;
+
+  @media (max-width: $table_portrait) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet) {
+    --default: 0.5rem;
+  }
+
+  @media (max-width: $mobile) {
+    --large: 2.5rem;
+    --caption: 10px;
+  }
+}

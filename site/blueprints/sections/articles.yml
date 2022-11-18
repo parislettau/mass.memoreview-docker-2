@@ -1,0 +1,10 @@
+  type: pages
+  headline: Published
+  template: review
+  status: published
+  info: "{{ page.num }}"
+  type: pages
+  template: review
+  empty: No articles yet
+  sortBy: num desc
+#  layout: cards

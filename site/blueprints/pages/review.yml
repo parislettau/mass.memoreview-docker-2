@@ -1,0 +1,101 @@
+title: Review
+parent: site.find("review")
+sortable: false
+status:
+  draft: true
+  listed: true
+  unlisted: false
+
+options:
+  changeTemplate: false
+
+tabs:
+  content:
+    icon: text
+    label: Content
+    columns:
+      # main content
+      main:
+        width: 2/3
+        sections:
+          content:
+            type: fields
+            fields:
+              text:
+                label: Review
+                type: textarea
+                size: large
+              bio:
+                label: Bio
+                type: textarea
+                size: small
+              socials:
+                label: Socials
+                type: textarea
+                size: small
+              quote:
+                label: Quote
+                type: textarea
+                size: small
+
+      # meta information
+      sidebar:
+        width: 1/3
+        sections:
+          images:
+            type: files
+            template: image
+            info: "{{ file.dimensions }}"
+            image:
+              ratio: 5/4
+              cover: true
+            min: 1
+            size: small
+          meta:
+            type: fields
+            fields:
+              thumbnail:
+                label: Thumbnail
+                extends: sections/cover
+                template: image
+                required: true
+              author:
+                label: Author
+                type: tags
+                options: query
+                query: site.index.pluck("author", ",", true)
+              university:
+                label: University
+                type: tags
+                options: query
+                query: site.index.pluck("university", ",", true)
+              school:
+                label: School
+                type: tags
+                options: query
+                query: site.index.pluck("school", ",", true)
+              department:
+                label: Department
+                type: tags
+                options: query
+                query: site.index.pluck("department", ",", true)
+              year_level:
+                label: Year Level
+                type: tags
+                options: query
+                query: site.index.pluck("year_level", ",", true)
+              artists:
+                label: Artists
+                type: tags
+              date:
+                label: Date Published
+                type: date
+              #            time: true
+              #              step: 1  # 1 minute steps
+              opened:
+                label: Exhibition Open
+                type: date
+              closed:
+                label: Exhibition Close
+                type: date
+  seotab: seo

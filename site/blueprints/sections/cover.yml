@@ -1,0 +1,8 @@
+type: files
+headline: Cover image
+max: 1
+layout: cards
+info: "{{ file.dimensions }}"
+image:
+  cover: true
+  ration: 1/1

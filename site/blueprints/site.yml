@@ -1,0 +1,9 @@
+title: Site
+
+tabs:
+  content:
+    icon: text
+    label: Content
+    sections:
+      pages: true
+  seotab: seo

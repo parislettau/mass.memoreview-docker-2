@@ -1,0 +1,29 @@
+title: Reviews
+#sortable: true
+icon: page
+columns:
+  left:
+    width: 1/2
+    sections:
+      drafts:
+        type: pages
+        headline: Drafts
+        template: review
+        layout: cardlets
+        status: draft
+        info: "{{ page.num }}"
+        template: review
+        empty: No articles yet
+        sortBy: num desc
+      unlised:
+        extends: sections/articles
+        headline: Unlisted
+        status: unlisted
+
+  right:
+    width: 1/2
+    sections:
+      listed:
+        headline: Published
+        status: published
+        extends: sections/articles

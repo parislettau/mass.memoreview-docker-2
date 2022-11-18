@@ -1,0 +1,57 @@
+title: Reviews
+
+icon: page
+
+columns:
+  # main content
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          redirect:
+            label: Redirect
+            type: toggle
+            text: 
+              - "off"
+              - "on"
+          toggle:
+            label: Marquee
+            type: toggle
+            text: 
+              - "off"
+              - "on"
+          marquee:
+            label: Marquee Text
+            type: textarea
+#            size: small
+          support:
+            label: Support Text
+            type: textarea
+            size: small
+          information:
+            label: Information
+            type: textarea
+            size: small
+          contributors:
+            label: Contributors
+            type: textarea
+            size: small
+  side:
+    width: 1/3
+    sections:
+      images:
+        type: files
+        template: image
+        info: "{{ file.dimensions }}"
+        image:
+          ratio: 5/4
+          cover: true
+        min: 1
+        size: small
+        
+        
+            
+
+

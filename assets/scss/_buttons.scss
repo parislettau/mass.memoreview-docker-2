@@ -1,0 +1,41 @@
+.pill {
+  border-radius: 99999px;
+  background: transparent;
+  font-size: calc(var(--small) - 2px);
+  border: 1px solid;
+  text-align: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 42px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0 var(--mid);
+  font-family: var(--union);
+}
+
+.close {
+  &-text {
+    @media(max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &-icon {
+    display: none;
+
+    @media(max-width: $mobile) {
+      display: block;
+    }
+
+  }
+}

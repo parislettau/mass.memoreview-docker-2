@@ -1,0 +1,10 @@
+<?php snippet('redirect') ?>
+<?php snippet('header') ?>
+<?php snippet('nav') ?>
+<?php snippet('marquee') ?>
+<?php snippet('main') ?>
+<?php snippet('content-pane') ?>
+<?php snippet('menu-pane') ?>
+<?php snippet('support') ?>
+<?php snippet('filter') ?>
+<?php snippet('footer') ?>

@@ -1,0 +1,51 @@
+title: Writer
+description: Writer who can submit reviews but does not have panel access.
+permissions:
+  access:
+    *: false
+  files:
+    *: false
+  languages:
+    *: false
+  pages:
+    *: false
+  site:
+    *: false
+  user:
+    *: false
+    changeName: true
+    changeEmail: true
+    changePassword: true
+
+columns:
+  - width: 1/2
+    fields:
+      address:
+        label: Address
+        type: text
+      postcode:
+        label: Postcode
+        type: text
+        width: 1/4
+      country:
+        label: Country
+        type: text
+      phone:
+        label: Phone
+        type: text
+
+  - width: 1/2
+    fields:
+      website:
+        label: Website
+        type: url
+      twitter:
+        label: Twitter
+        type: text
+        icon: twitter
+        placeholder: @username
+      instagram:
+        label: Instagram
+        type: text
+        icon: instagram
+        placeholder: username
