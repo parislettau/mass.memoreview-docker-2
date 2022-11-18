@@ -15,8 +15,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install --no-install-recommends -y \
     apache2 \
     apache2-utils \
-    ca-certificates \
     git \
+    ca-certificates \
     php \
     libapache2-mod-php \
     php-curl \
@@ -27,8 +27,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     php-mbstring \
     php-xml \
     php-zip && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* &&\
-    apt-get install nano
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+# apt-get install nano
 
 # Install nano
 # RUN apt-get install nano
